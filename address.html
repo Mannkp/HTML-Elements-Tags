@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title><address>: The Contact Address element</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    a[href^='mailto']::before {
+        content: '📧 ';
+    }
+
+    a[href^='tel']::before {
+        content: '📞 ';
+    }
+</style>
+
+<body>
+    <h1>&lt;address&gt;: The Contact Address element</h1>
+    <p>The &lt;address&gt; HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.<br>
+    Syntax to add a comment:<br>
+    <code>&lt;address&gt; &lt;/address&gt;</code>
+    <p>Contact the author of this page:</p>
+    <address>
+        <a href="mailto:Mann@rock.com">mailto:Mann@rock.com</a><br>
+        <a href="tel:+91 9090909091">tel:+91 9090909091</a>
+    </address>
+</body>
+</html>

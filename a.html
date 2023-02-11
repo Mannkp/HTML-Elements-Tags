@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <title>Anchor Tag</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    h1{
+        text-align: center;
+        margin:50px;
+    }
+    #ss{
+        width: 50vw;
+    }
+    .h2{
+        font-weight: 700;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="body">
+        <h1>Anchor Tag</h1>
+        <p>The  &lt;a&gt; HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
+
+        <br>Content within each  &lt;a&gt; should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the  &lt;a&gt; element will activate it.</p>
+        <p>We can add Anchor Tag to:
+        <ul>
+            <li>Images</li>
+            <li>buttons</li>
+            <li>Text</li>
+        </ul>
+        </p>
+        <p class="h2">For Example:</p>
+        <p>Clicking this link: <a href="https://developer.mozilla.org/en-US/"><code>&lt;a href="https://developer.mozilla.org/en-US/"&gt; &lt;/a&gt;</code></a> user will be navigated to <strong>MDN</strong> webpage!</p>
+        <p class="h2">Output:</p><img src="ss.png" id="ss">
+        <h2>Attributes</h2>
+
+<h3>download</h3>
+<p>Causes the browser to treat the linked URL as a download. Can be used with or without a filename value:</p>
+<ul>
+<li><p>Without a value, the browser will suggest a filename/extension, generated from various sources:</p></li>
+<ul type="circle">
+    <li>The Content-Disposition HTTP header</li>
+    <li>The final segment in the URL path</li>
+    <li>The media type (from the Content-Type header, the start of a data: URL, or Blob.type for a blob: URL)</li>
+</ul>
+<li>filename: defining a value suggests it as the filename. / and \ characters are converted to underscores (_). Filesystems may forbid other characters in filenames, so browsers will adjust the suggested name if necessary.</li>
+</ul>
+<div class="note">
+<h3>Note:</h3>
+<ul type="disc">
+<li>download only works for same-origin URLs, or the blob: and data: schemes.</li>
+<li>How browsers treat downloads varies by browser, user settings, and other factors. The user may be prompted before a download starts, or the file may be saved automatically, or it may open automatically, either in an external application or in the browser itself.</li>
+<li>If the Content-Disposition header has different information from the download attribute, resulting behavior may differ:</li>
+<ul type="circle">
+<li>If the header specifies a filename, it takes priority over a filename specified in the download attribute.</li>
+<li>If the header specifies a disposition of inline, Chrome and Firefox prioritize the attribute and treat it as a download. Old Firefox versions (before 82) prioritize the header and will display the content inline.</li>
+</ul>
+</ul>
+</div>
+<h3>href</h3>
+<p>The URL that the hyperlink points to. Links are not restricted to HTTP-based URLs — they can use any URL scheme supported by browsers:</p>
+<ul>
+<li>Sections of a page with document fragments
+<li>Specific text portions with text fragments
+<li>Pieces of media files with media fragments
+<li>Telephone numbers with tel: URLs
+<li>Email addresses with mailto: URLs
+<li>While web browsers may not support other URL schemes, websites can with registerProtocolHandler()
+</ul>
+
+<h3>hreflang</h3>
+<p>Hints at the human language of the linked URL. No built-in functionality. Allowed values are the same as the global lang attribute.</p>
+
+<h3>ping</h3>
+<p>A space-separated list of URLs. When the link is followed, the browser will send POST requests with the body PING to the URLs. Typically for tracking.</p>
+
+<h3>referrerpolicy</h3>
+<p>How much of the referrer to send when following the link.</p>
+<ul>
+<li>no-referrer:<p> The Referer header will not be sent.</p>
+<li>no-referrer-when-downgrade: <p>The Referer header will not be sent to origins without TLS (HTTPS).</p>
+<li>origin: <p>The sent referrer will be limited to the origin of the referring page: its scheme, host, and port.</p>
+<li>origin-when-cross-origin: <p>The referrer sent to other origins will be limited to the scheme, the host, and the port. Navigations on the same origin will still include the path.</p>
+<li>same-origin:<p> A referrer will be sent for same origin, but cross-origin requests will contain no referrer information.</p>
+<li>strict-origin:<p>Only send the origin of the document as the referrer when the protocol security level stays the same (HTTPS→HTTPS), but don't send it to a less secure destination (HTTPS→HTTP).</p> 
+<li>strict-origin-when-cross-origin (default):<p> Send a full URL when performing a same-origin request, only send the origin when the protocol security level stays the same (HTTPS→HTTPS), and send no header to a less secure destination (HTTPS→HTTP).</p>
+<li>unsafe-url:<p> The referrer will include the origin and the path (but not the fragment, password, or username). This value is unsafe, because it leaks origins and paths from TLS-protected resources to insecure origins.</p>
+</ul>
+<h3>rel</h3>
+<p>The relationship of the linked URL as space-separated link types.</p>
+
+<h3>target</h3>
+<p>Where to display the linked URL, as the name for a browsing context (a tab, window, or &lt;iframe&gt;). The following keywords have special meanings for where to load the URL:</p>
+<ul>
+<li>_self: the current browsing context. (Default)
+<li>_blank: usually a new tab, but users can configure browsers to open a new window instead.
+<li>_parent: the parent browsing context of the current one. If no parent, behaves as _self.
+<li>_top: the topmost browsing context (the "highest" context that's an ancestor of the current one). If no ancestors, behaves as _self.
+</ul>
+<div class="note">
+Note: Setting target="_blank" on &lt;a&gt;> elements implicitly provides the same rel behavior as setting rel="noopener" which does not set window.opener.
+</div>
+<h3>type</h3>
+<p>Hints at the linked URL's format with a MIME type. No built-in functionality.</p>
+
+<h2>Deprecated attributes</h2>
+<h3>charset</h3> (Deprecated)
+<p>Hinted at the character encoding of the linked URL.</p>
+<div class="note">
+Note: This attribute is deprecated and should not be used by authors. Use the HTTP Content-Type header on the linked URL.
+</div>
+<h3>coords</h3> (Deprecated)
+<p>Used with the shape attribute. A comma-separated list of coordinates.</p>
+
+<h3>name</h3> (Deprecated)
+<p>Was required to define a possible target location in a page. In HTML 4.01, id and name could both be used on &lt;a&gt;, as long as they had identical values.</p>
+<div class="note">
+Note: Use the global attribute id instead.
+</div>
+<h3>rev</h3> (Deprecated)
+<p>Specified a reverse link; the opposite of the rel attribute. Deprecated for being very confusing.</p>
+
+<h3>shape</h3> (Deprecated)
+<p>The shape of the hyperlink's region in an image map.</p>
+<div class="note">
+Note: Use the &lt;area&gt; element for image maps instead.
+</div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Table Tag</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    th,td,tr{
+        border: 1px solid black;
+        padding: 20;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Table Tag</h1>
+<table>
+    <caption>Table Example</caption>
+    <thead>
+        <tr>
+            <th rowspan="2">1</th>
+            <th colspan="2">2</th>
+            <th rowspan="2">3</th>
+        </tr>
+        <tr>
+            <th>11</th>
+            <th>22</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>abc</td>
+            <td>bcd</td>
+            <td>cde</td>
+            <td>def</td>
+        </tr>
+         <tr>
+            <td>abc</td>
+            <td>bcd</td>
+            <td>cde</td>
+            <td>def</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>bcd</td>
+            <td>cde</td>
+            <td>def</td>
+        </tr>
+    </tbody>
+</table>
+
+<div id="attributes">
+    <h2>Attributes:</h2>
+    <br>
+    <p>
+        <h3>align</h3>
+        <p>This enumerated attribute indicates how the table must be aligned inside the containing document. It may have the following values:</p>
+        <ul>
+        <li>left: the table is displayed on the left side of the document;
+        <li>center: the table is displayed in the center of the document;
+        <li>right: the table is displayed on the right side of the document.
+        </ul>
+        <p>Set margin-left and margin-right to auto or margin to 0 auto to achieve an effect that is similar to the align attribute.</p>
+        
+        <h3>bgcolor</h3>
+        <p>The background color of the table. It is a 6-digit hexadecimal RGB code, prefixed by a '#'. One of the predefined color keywords can also be used.</p>
+        
+        <p>To achieve a similar effect, use the CSS background-color property.</p>
+        
+        <h3>border</h3>
+        <p>This integer attribute defines, in pixels, the size of the frame surrounding the table. If set to 0, the frame attribute is set to void.</p>
+        
+        <p>To achieve a similar effect, use the CSS border shorthand property.</p>
+        
+        <h3>cellpadding</h3>
+        <p>This attribute defines the space between the content of a cell and its border, displayed or not. If the cellpadding's length is defined in pixels, this pixel-sized space will be applied to all four sides of the cell's content. If the length is defined using a percentage value, the content will be centered and the total vertical space (top and bottom) will represent this value. The same is true for the total horizontal space (left and right).</p>
+        
+        <p>To achieve a similar effect, apply the border-collapse property to the &lt;table&gt; element, with its value set to collapse, and the padding property to the &lt;td&gt; elements.</p>
+        
+        <h3>cellspacing</h3>
+        <p>This attribute defines the size of the space between two cells in a percentage value or pixels. The attribute is applied both horizontally and vertically, to the space between the top of the table and the cells of the first row, the left of the table and the first column, the right of the table and the last column and the bottom of the table and the last row.</p>
+        
+        <p>To achieve a similar effect, apply the border-spacing property to the &lt;table&gt; element. border-spacing does not have any effect if border-collapse is set to collapse.</p>
+        
+        <h3>frame</h3>
+        <p>This enumerated attribute defines which side of the frame surrounding the table must be displayed.</p>
+        
+        <p>To achieve a similar effect, use the border-style and border-width properties.</p>
+        
+        <h3>rules</h3>
+        <p>This enumerated attribute defines where rules, i.e. lines, should appear in a table. It can have the following values:</p>
+        
+        <p>none, which indicates that no rules will be displayed; it is the default value;
+        groups, which will cause the rules to be displayed between row groups (defined by the &lt;thead&gt;, t&lt;body&gt; and &lt;tfoot&gt; elements) and between column groups (defined by the &lt;col&gt; and &lt;colgroup&gt; elements) only;
+        rows, which will cause the rules to be displayed between rows;
+        cols, which will cause the rules to be displayed between columns;
+        all, which will cause the rules to be displayed between rows and columns.
+        To achieve a similar effect, apply the border property to the appropriate &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;col&gt;, or &lt;colgroup&gt; elements.</p>
+        
+        <h3>summary</h3>
+        <p>This attribute defines an alternative text that summarizes the content of the table. Use the &lt;caption&gt; element instead.</p>
+        
+        <h3>width</h3>
+        <p>This attribute defines the width of the table. Use the CSS width property instead.</p>
+</div>
+</body>
+</html>

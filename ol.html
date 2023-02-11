@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>OL Tag</title>
+    </head>
+    <style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    h1{
+        text-align: center;
+        margin:50px;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+    </style>
+    <body>
+        <h1>&lt;ol&gt;: The Ordered List element</h1>
+        <p></p>The &lt;ol&gt; HTML element represents an ordered list of items — typically rendered as a numbered list.</p>
+        <img src="ol.png" alt="OL Tag">
+        <h2>Attributes</h2>
+        <h3>reversed</h3>
+        <p>This Boolean attribute specifies that the list's items are in reverse order. Items will be numbered from high to low.</p>
+
+        <h3>start</h3>
+        <p>An integer to start counting from for the list items. Always an Arabic numeral (1, 2, 3, etc.), even when the numbering type is letters or Roman numerals. For example, to start numbering elements from the letter "d" or the Roman numeral "iv," use start="4".</p>
+        
+        <h3>type</h3>
+        <p>Sets the numbering type:</p>
+        <ul>
+        <li>a for lowercase letters
+        <li>A for uppercase letters
+        <li>i for lowercase Roman numerals
+        <li>I for uppercase Roman numerals
+        <li>1 for numbers (default)
+    </ul>
+        <p>The specified type is used for the entire list unless a different type attribute is used on an enclosed &lt;li&gt; element.</p>
+        <div class="note">
+        Note: Unless the type of the list number matters (like legal or technical documents where items are referenced by their number/letter), use the CSS list-style-type property instead.
+    </div>
+        <h3>Usage notes</h3>
+        <p>Typically, ordered list items display with a preceding marker, such as a number or letter.</p>
+        
+        <p>The &lt;ol&gt; and &lt;ul&gt; elements may nest as deeply as desired, alternating between &lt;ol&gt; and &lt;ul&gt; however you like.</p>
+        
+        <p>The &lt;ol&gt; and &lt;ul&gt; elements both represent a list of items. The difference is with the &lt;ol&gt; element, the order is meaningful. For example:</p>
+    <ul>
+        <li>Steps in a recipe
+        <li>Turn-by-turn directions
+        <li>The list of ingredients in decreasing proportion on nutrition information labels
+        <li>To determine which list to use, try changing the order of the list items; if the meaning changes, use the &lt;ol&gt; element — otherwise you can use &lt;ul&gt;.
+    </ul>
+    </body>
+</html>

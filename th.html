@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>th/tr/td Tag</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    #homebtn{
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;tr&gt; &lt;th&gt; &lt;td&gt;: The Table Row/header/data element</h1>
+    <p>The &lt;tr&gt; HTML element defines a row of cells in a table. The row's cells can then be established using a mix of &lt;td&gt; (data cell) and &lt;th&gt; (header cell) elements.</p>
+    <p>The &lt;th&gt; HTML element defines a cell as header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes.</p>
+    <p>The &lt;td&gt; HTML element defines a cell of a table that contains data. It participates in the table model.</p>
+    <h2>Attributes:</h2>
+    <h3>abbr</h3>
+<p>This attribute contains a short abbreviated description of the cell's content. Some user-agents, such as speech readers, may present this description before the content itself.</p>
+
+<h3>colspan</h3>
+<p>This attribute contains a non-negative integer value that indicates for how many columns the cell extends. Its default value is 1. Values higher than 1000 will be considered as incorrect and will be set to the default value (1).</p>
+
+<h3>headers</h3>
+<p>This attribute contains a list of space-separated strings, each corresponding to the id attribute of the <th> elements that apply to this element.</p>
+
+<h3>rowspan</h3>
+<p>This attribute contains a non-negative integer value that indicates for how many rows the cell extends. Its default value is 1; if its value is set to 0, it extends until the end of the table section (<thead>, <tbody>, <tfoot>, even if implicitly defined), that the cell belongs to. Values higher than 65534 are clipped down to 65534.</p>
+
+<h3>scope</h3>
+<p>This enumerated attribute defines the cells that the header (defined in the <th>) element relates to. It may have the following values:</p>
+<ul>
+<li>row: The header relates to all cells of the row it belongs to.
+<li>col: The header relates to all cells of the column it belongs to.
+<li>rowgroup: The header belongs to a rowgroup and relates to all of its cells. These cells can be placed to the <li>right or the left of the header, depending on the value of the dir attribute in the <table> element.
+<li>colgroup: The header belongs to a colgroup and relates to all of its cells.
+<div class="note">
+    If the scope attribute is not specified, or its value is not row, col, or rowgroup, or colgroup, then browsers automatically select the set of cells to which the header cell applies.
+</div>
+</ul>
+</body>
+</html>

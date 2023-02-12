@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Li Tag</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    #homebtn{
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;li&gt;: The List Item element</h1>
+        <p>The &lt;li&gt; HTML element is used to represent an item in a list. It must be contained in a parent element: an ordered list (&lt;ol&gt;), an unordered list (&lt;ul&gt;), or a menu (&lt;menu&gt;). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.</p>
+        <h2>Example</h2>
+        <img src="li.png">
+        <h2>Attributes:</h2>
+        <h3>value</h3>
+<p>This integer attribute indicates the current ordinal value of the list item as defined by the &lt;ol&gt; element. The only allowed value for this attribute is a number, even if the list is displayed with Roman numerals or letters. List items that follow this one continue numbering from the value set. The value attribute has no meaning for unordered lists (&lt;ul&gt;) or for menus (&lt;menu&gt;).</p>
+
+<h3>type</h3> (Deprecated Non-standard)
+<p>This character attribute indicates the numbering type:</p>
+<ul>
+<li>a: lowercase letters
+<li>A: uppercase letters
+<li>i: lowercase Roman numerals
+<li>I: uppercase Roman numerals
+<li>1: numbers
+</ul>
+<p>This type overrides the one used by its parent &lt;ol&gt; element, if any.</p>
+<div class="note">
+Note: This attribute has been deprecated; use the CSS list-style-type property instead.
+</div>
+</body>
+</html>

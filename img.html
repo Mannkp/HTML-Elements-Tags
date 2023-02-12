@@ -10,15 +10,25 @@
         padding-left: 200px;
         padding-right: 200px;
     }
-    
+    #homebtn{
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
 </style>
 
 <body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
     <h1>&lt;img&gt;: The Image Embed element</h1>
     <p>The &lt;img&gt; HTML element embeds an image into the document.</p>
     <img class="fit-picture" src="orange.jpg" alt="Grapefruit slice atop a pile of other slices">
     <p>Syntax:</p>
-    <p><code>&lt;img src="source location of image" alt=""&gt;</code>image title</p>
+    <p>&lt;img src="source location of image" alt=""&gt;image title</p>
     <p>The above example shows usage of the &lt;img&gt; element:</p>
 <ul>
 <li>The <em>src</em> attribute is required, and contains the path to the image you want to embed.

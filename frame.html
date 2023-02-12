@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Frame element</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    #homebtn{
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;frame&gt;: The Frame element</h1>
+    <p>The &lt;frame&gt; HTML element defines a particular area in which another HTML document can be displayed. A frame should be used within a &lt;frameset&gt;.</p>
+    <p>Using the &lt;frame&gt; element is not encouraged because of certain disadvantages such as performance problems and lack of accessibility for users with screen readers. Instead of the &lt;frame&gt; element, &lt;iframe&gt; may be preferred.</p>
+    <div class="note">
+    Note: Because the use of frames is now discouraged in favor of using &lt;iframe&gt;, this element is not typically used by modern websites.
+    </div>
+    <h2>Attributes:</h2>
+    <h3>src</h3>(Deprecated)
+    <p>This attribute specifies the document that will be displayed by the frame.</p>
+    
+    <h3>name</h3>(Deprecated)
+    <p>This attribute is used for labeling frames. Without labeling, every link will open in the frame that it's in the closest parent frame. See the target attribute for more information.</p>
+    
+    <h3>noresize</h3>(Deprecated)
+    <p>This attribute prevents resizing of frames by users.</p>
+    
+    <h3>scrolling</h3>(Deprecated)
+    <p>This attribute defines the existence of a scrollbar. If this attribute is not used, the browser adds a scrollbar when necessary. There are two choices: "yes" for forcing a scrollbar even when it is not necessary and "no" for forcing no scrollbar even when it is necessary.</p>
+    
+    <h3>marginheight</h3>(Deprecated)
+    <p>This attribute defines the height of the margin between frames.</p>
+    
+    <h3>marginwidth</h3>(Deprecated)
+    <p>This attribute defines the width of the margin between frames.</p>
+    
+    <h3>frameborder</h3>(Deprecated)
+    <p>This attribute allows you to specify a frame's border.</p>
+
+</body>
+</html>

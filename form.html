@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Form Element</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    #homebtn{
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;form&gt;: The Form element</h1>
+    <p>The &lt;form&gt; HTML element represents a document section containing interactive controls for submitting information.</p>
+    <img src="form.png">
+    <p>It is possible to use the :valid and :invalid CSS pseudo-classes to style a &lt;form&gt; element based on whether the elements inside the form are valid.</p>
+    <h2>Attributes:</h2>
+    <h3>accept</h3> Deprecated
+Comma-separated content types the server accepts.
+<div class="note">
+Note: This attribute has been deprecated and should not be used. Instead, use the accept attribute on &lt;input type=file&gt; elements.
+</div>
+<h3>accept-charset</h3>
+<p>Space-separated character encodings the server accepts. The browser uses them in the order in which they are listed. The default value means the same encoding as the page. (In previous versions of HTML, character encodings could also be delimited by commas.)
+
+<h3>autocapitalize</h3> Non-standard
+<p>A nonstandard attribute used by iOS Safari that controls how textual form elements should be automatically capitalized. autocapitalize attributes on a form elements override it on &lt;form&gt;. Possible values:</p>
+<ul>
+<li>none: No automatic capitalization.
+<li>sentences (default): Capitalize the first letter of each sentence.
+<li>words: Capitalize the first letter of each word.
+<li>characters: Capitalize all characters — that is, uppercase.
+</ul>
+<h3>autocomplete</h3>
+<p>Indicates whether input elements can by default have their values automatically completed by the browser. autocomplete attributes on form elements override it on &lt;form&gt;. Possible values:</p>
+<ul>
+<li>off: The browser may not automatically complete entries. (Browsers tend to ignore this for suspected login forms; see The autocomplete attribute and login fields.)
+<li>on: The browser may automatically complete entries.
+</ul>
+<h3>name</h3>
+<p>The name of the form. The value must not be the empty string, and must be unique among the form elements in the forms collection that it is in, if any.</p>
+
+<h3>rel</h3>
+<p>Controls the annotations and what kinds of links the form creates. Annotations include external, nofollow, opener, noopener, and noreferrer. Link types include help, prev, next, search, and license. The rel value is a space-separated list of these enumerated values.</p>
+
+<h2>Attributes for form submission:</h2>
+<p>The following attributes control behavior during form submission.</p>
+
+<h3>action</h3>
+<p>The URL that processes the form submission. This value can be overridden by a formaction attribute on a &lt;button&gt;, &lt;input type="submit"&gt;, or &lt;input type="image"&gt; element. This attribute is ignored when method="dialog" is set.</p>
+
+<h3>enctype</h3>
+<p>If the value of the method attribute is post, enctype is the MIME type of the form submission. Possible values:</p>
+<ul>
+<li>application/x-www-form-urlencoded: The default value.
+<li>multipart/form-data: Use this if the form contains &lt;input&gt; elements with type=file.
+<li>text/plain: Useful for debugging purposes.
+</ul>
+<p>This value can be overridden by formenctype attributes on &lt;button&gt;, &lt;input type="submit"&gt;, or &lt;input type="image"&gt; elements.</p>
+<h3>method</h3>
+<p>The HTTP method to submit the form with. The only allowed methods/values are (case insensitive):
+<ul>
+<li>post: The POST method; form data sent as the request body.
+<li>get (default): The GET; form data appended to the action URL with a ? separator. Use this method when the form has no side effects.
+<li>dialog: When the form is inside a &lt;dialog&gt;, closes the dialog and throws a submit event on submission without submitting data or clearing the form.
+</ul>
+This value is overridden by formmethod attributes on &lt;button&gt;, &lt;input type="submit"&gt;, or &lt;input type="image"&gt; elements.
+    
+<h3>novalidate</h3>
+<p>This Boolean attribute indicates that the form shouldn't be validated when submitted. If this attribute is not set (and therefore the form is validated), it can be overridden by a formnovalidate attribute on a &lt;button&gt;, &lt;input type="submit"&gt;, or &lt;input type="image"&gt; element belonging to the form.
+
+<h3>target</h3>
+<p>Indicates where to display the response after submitting the form. It is a name/keyword for a browsing context (for example, tab, window, or iframe). The following keywords have special meanings:</p>
+<ul>
+<li>_self (default): Load into the same browsing context as the current one.
+<li>_blank: Load into a new unnamed browsing context. This provides the same behavior as setting rel="noopener" which does not set window.opener.
+<li>_parent: Load into the parent browsing context of the current one. If no parent, behaves the same as _self.
+<li>_top: Load into the top-level browsing context (i.e., the browsing context that is an ancestor of the current one and has no parent). If no parent, behaves the same as _self.
+</ul>
+<p>This value can be overridden by a formtarget attribute on a &lt;button&gt;, &lt;input type="submit"&gt;, or &lt;input type="image"&gt; element.</p>
+</p>
+</p></p></body></html>

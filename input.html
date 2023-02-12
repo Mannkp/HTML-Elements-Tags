@@ -1,0 +1,166 @@
+<html>
+<head>
+    <title>input Element</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #homebtn{
+        margin-top: 10px;
+        margin-left: -100px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+    h1,#link{
+        text-align: center;
+    }
+    table{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    td,th,tr{
+        border : 1px solid black;
+    }
+    td,th{
+        padding-top:15px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 15px;
+        width: 20%;
+        }
+        tr:nth-child(2n+1){
+            background-color: #fcae1e;
+        }
+        tr:nth-child(2n){
+            background-color: #ffff;
+        }
+        th{
+            background-color: darkorange;
+        }
+</style>
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;Input&gt;: The Input element</h1>
+    <h2 id="link">visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">MDN site for exact information</a></h2>
+    <p>The available types are as follows:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>button</td>
+                <td>A push button with no default behavior displaying the value of the value attribute, empty by default.</td>
+                <td><input type="button"></td>
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td>A check box allowing single values to be selected/deselected.</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>A control for specifying a color; opening a color picker when active in supporting browsers.</td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>A control for entering a date (year, month, and day, with no time). Opens a date picker or numeric wheels for year, month, day when active in supporting browsers.</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>datetime-local</td>
+                <td>A control for entering a date and time, with no time zone. Opens a date picker or numeric wheels for date- and time-components when active in supporting browsers.</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>A field for editing an email address. Looks like a text input, but has validation parameters and relevant keyboard in supporting browsers and devices with dynamic keyboards.</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td>A control that lets the user select a file. Use the accept attribute to define the types of files that the control can select.</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>month</td>
+                <td>A control for entering a month and year, with no time zone.</td>
+                <td><input type="month"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>A control for entering a number. Displays a spinner and adds default validation. Displays a numeric keypad in some devices with dynamic keypads.</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Radio</td>
+                <td>A radio button, allowing a single value to be selected out of multiple choices with the same name value.</td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>Range</td>
+                <td>A control for entering a number whose exact value is not important. Displays as a range widget defaulting to the middle value. Used in conjunction min and max to define the range of acceptable values.</td>
+                <td><input type="range"></td>
+            </tr>
+            <tr>
+                <td>Reset</td>
+                <td>A button that resets the contents of the form to default values. Not recommended.</td>
+                <td><input type="reset"></td>
+            </tr>
+            <tr>
+                <td>Search</td>
+                <td>A single-line text field for entering search strings. Line-breaks are automatically removed from the input value. May include a delete icon in supporting browsers that can be used to clear the field. Displays a search icon instead of enter key on some devices with dynamic keypads.</td>
+                <td>Search:<input type="search"></td>
+            </tr>
+            <tr>
+                <td>Submit</td>
+                <td>A button that submits the form.</td>
+                <td><input type="submit"></td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>The default value. A single-line text field. Line-breaks are automatically removed from the input value.</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>A control for entering a time value with no time zone.</td>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                <td>URL</td>
+                <td>A field for entering a URL. Looks like a text input, but has validation parameters and relevant keyboard in supporting browsers and devices with dynamic keyboards.</td>
+                <td><input type="url"></td>
+            </tr>
+            <tr>
+                <td>Week</td>
+                <td>A control for entering a date consisting of a week-year number and a week number with no time zone.</td>
+                <td><input type="week"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>

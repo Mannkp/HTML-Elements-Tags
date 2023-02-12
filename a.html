@@ -8,6 +8,8 @@
         margin:0px;
         padding:0px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .body{
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -27,9 +29,19 @@
         margin: 10px;
         padding: 10px;
     }
+    #homebtn{
+        margin-top: 10px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
 </style>
 
 <body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
     <div class="body">
         <h1>Anchor Tag</h1>
         <p>The  &lt;a&gt; HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
@@ -43,7 +55,7 @@
         </ul>
         </p>
         <p class="h2">For Example:</p>
-        <p>Clicking this link: <a href="https://developer.mozilla.org/en-US/"><code>&lt;a href="https://developer.mozilla.org/en-US/"&gt; &lt;/a&gt;</code></a> user will be navigated to <strong>MDN</strong> webpage!</p>
+        <p>Clicking this link: <a href="https://developer.mozilla.org/en-US/">&lt;a href="https://developer.mozilla.org/en-US/"&gt; &lt;/a&gt;</a> user will be navigated to <strong>MDN</strong> webpage!</p>
         <p class="h2">Output:</p><img src="ss.png" id="ss">
         <h2>Attributes</h2>
 
@@ -141,5 +153,7 @@ Note: Use the &lt;area&gt; element for image maps instead.
     </div>
     
 </body>
-
+<script>
+    console.log("Welcome!");
+</script>
 </html>

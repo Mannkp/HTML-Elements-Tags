@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>&lt;marquee&gt;: Marquee Element</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;    
+        padding-right: 200px;
+    }
+    h1{
+        text-align: center;
+    }
+    #homebtn {
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding: 20px 20px;
+    }
+
+    #imghome {
+        width: 30px;
+        height: 30px;
+    }
+
+    .note {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .note1 {
+        border: 1px solid black;
+        background-color: brown;
+        color: #000;
+        /* backdrop-filter: blur(100px); */
+        opacity: 0.8;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+    p{
+    font: 1rem 'Fira Sans', sans-serif;
+    }
+    .example{
+        border: 1px solid black;
+        margin: 20px;
+        padding:20px;
+    }
+</style>
+
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;marquee&gt;: The Marquee element</h1>
+    <div class="note1">
+    <p>Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+    </div>
+    <p>The &lt;marquee&gt; HTML element is used to insert a scrolling area of text. You can control what happens when the text reaches the edges of its content area using its attributes.</p>
+
+    <h2>Example</h2>
+    <div class="example">
+    <marquee>This text will scroll from right to left</marquee>
+
+    <marquee direction="up">This text will scroll from bottom to top</marquee>
+
+    <marquee
+    direction="down"
+    width="250"
+    height="200"
+    behavior="alternate"
+    style="border:solid">
+    <marquee behavior="alternate"> This text will bounce </marquee>
+    </marquee>
+    </div>
+
+    <h3>Attributes:</h3>
+<h3>behavior</h3> Deprecated
+<p>Sets how the text is scrolled within the marquee. Possible values are scroll, slide and alternate. If no value is specified, the default value is scroll.</p>
+
+<h3>bgcolor</h3> Deprecated
+<p>Sets the background color through color name or hexadecimal value.</p>
+
+<h3>direction</h3> Deprecated
+<p>Sets the direction of the scrolling within the marquee. Possible values are left, right, up and down. If no value is specified, the default value is left.</p>
+
+<h3>height</h3> Deprecated
+<p>Sets the height in pixels or percentage value.</p>
+
+<h3>hspace</h3> Deprecated
+<p>Sets the horizontal margin</p>
+
+<h3>loop</h3> Deprecated
+<p>Sets the number of times the marquee will scroll. If no value is specified, the default value is −1, which means the marquee will scroll continuously.</p>
+
+<h3>scrollamount</h3> Deprecated
+<p>Sets the amount of scrolling at each interval in pixels. The default value is 6.</p>
+
+<h3>scrolldelay</h3> Deprecated
+<p>Sets the interval between each scroll movement in milliseconds. The default value is 85. Note that any value smaller than 60 is ignored and the value 60 is used instead unless truespeed is specified.</p>
+
+<h3>truespeed</h3> Deprecated
+<p>By default, scrolldelay values lower than 60 are ignored. If truespeed is present, those values are not ignored.</p>
+
+<h3>vspace</h3> Deprecated
+<p>Sets the vertical margin in pixels or percentage value.</p>
+
+<h3>width</h3> Deprecated
+<p>Sets the width in pixels or percentage value.</p>
+
+<h2>Event handlers</h2>
+<ul>
+<li><h3>onbounce</h3>
+<p>Fires when the marquee has reached the end of its scroll position. It can only fire when the behavior attribute is set to alternate.</p>
+
+<li><h3>onfinish</h3>
+<p>Fires when the marquee has finished the amount of scrolling that is set by the loop attribute. It can only fire when the loop attribute is set to some number that is greater than 0.</p>
+
+<li><h3>onstart</h3>
+<p>Fires when the marquee starts scrolling.</p>
+</ul>
+<h2>Methods</h2>
+<ul>
+<li><h3>start()</h3>
+<p>Starts scrolling of the marquee.</p>
+
+<li><h3>stop()</h3>
+<p>Stops scrolling of the marquee.</p>
+</ul>
+
+</body>
+</html>

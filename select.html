@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>&lt;Select&gt; Element</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    #homebtn{
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+    #fbox{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;select&gt;: The Select Element</h1>
+        <p>The &lt;select&gt; HTML element represents a control that provides a menu of options.</p>
+        <h2>Example:</h2>
+        <label for="pet-select">Choose a pet:</label>
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select><br><br><br>
+        <div id="fbox">
+        <img src="select.png">
+        <img src="select2.png">
+        </div>
+</body>
+</html>

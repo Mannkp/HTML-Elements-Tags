@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>&lt;option&gt; Element</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    #homebtn {
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding: 20px 20px;
+    }
+
+    #imghome {
+        width: 30px;
+        height: 30px;
+    }
+
+    .note {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;option&gt;: The HTML Option Element</h1>
+    <p>The &lt;option&gt; HTML element is used to define an item contained in a &lt;select&gt;, an &lt;optgroup&gt;, or a &lt;datalist&gt; element. As such, &lt;option&gt; can represent menu items in popups and other lists of items in an HTML document.</p>
+
+    <h2>Attributes:</h2>
+    <h3>disabled</h3>
+    <p>If this Boolean attribute is set, this option is not checkable. Often browsers grey out such control and it won't receive any browsing event, like mouse clicks or focus-related ones. If this attribute is not set, the element can still be disabled if one of its ancestors is a disabled &lt;optgroup&gt; element.</p>
+
+    <h3>label</h3>
+    <p>This attribute is text for the label indicating the meaning of the option. If the label attribute isn't defined, its value is that of the element text content.</p>
+
+    <h3>selected</h3>
+    <p>If present, this Boolean attribute indicates that the option is initially selected. If the &lt;option&gt; element is the descendant of a &lt;select&gt; element whose multiple attribute is not set, only one single &lt;option&gt; of this &lt;select&gt; element may have the selected attribute.</p>
+
+    <h3>value</h3>
+    <p>The content of this attribute represents the value to be submitted with the form, should this option be selected.If this attribute is omitted, the value is taken from the text content of the option element.</p>
+</body>
+</html>

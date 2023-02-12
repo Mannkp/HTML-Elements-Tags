@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>&lt;textarea&gt; Element</title>
+</head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    #homebtn{
+        margin-top: 10px;
+        margin-left: -200px;
+        position: fixed;
+        padding:20px 20px;
+    }
+    #imghome{
+        width: 30px;
+        height: 30px;
+    }
+    .note{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <a href="index.html" id="homebtn" target="_blank"><img src="icons8-home-page-90.png" id="imghome"></a>
+    <h1>&lt;textarea&gt;: The Textarea Element</h1>
+        <p>The &lt;textarea&gt; HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.</p>
+        <img src="textarea.png"></img>
+        <p>The above example demonstrates a number of features of &lt;textarea&gt;:</p>
+        <ul>
+            <li>An id attribute to allow the &lt;textarea&gt; to be associated with a &lt;label&gt; element for accessibility purposes
+            <li>A name attribute to set the name of the associated data point submitted to the server when the form is submitted.
+            <li>rows and cols attributes to allow you to specify an exact size for the &lt;textarea&gt; to take. Setting these is a good idea for consistency, as browser defaults can differ.
+            <li>Default content entered between the opening and closing tags. &lt;textarea&gt; does not support the value attribute.
+        </ul>
+        <h3>Example:</h3>
+        <form>
+        <label for="t1">textarea:</label>
+        <textarea name="t1" id="t1" rows="5" cols="30" placeholder="my name is ____" required></textarea>
+        <input type="submit">
+        </form>
+        <br>
+        <br>
+        <h2>Attributes:</h2>
+        <h3>autocomplete</h3>
+<p>This attribute indicates whether the value of the control can be automatically completed by the browser. Possible values are:</p>
+<ul>
+<li>off: The user must explicitly enter a value into this field for every use, or the document provides its own auto-completion method; the browser does not automatically complete the entry.
+<li>on: The browser can automatically complete the value based on values that the user has entered during previous uses.
+</ul>
+<p>If the autocomplete attribute is not specified on a &lt;textarea&gt; element, then the browser uses the autocomplete attribute value of the &lt;textarea&gt; element's form owner. The form owner is either the &lt;form&gt; element that this &lt;textarea&gt; element is a descendant of or the form element whose id is specified by the form attribute of the input element. For more information, see the autocomplete attribute in &lt;form&gt;.</p>
+
+<h3>autocorrect</h3> Non-standard
+<p>A string which indicates whether to activate automatic spelling correction and processing of text substitutions (if any are configured) while the user is editing this textarea. Permitted values are:</p>
+<ul>
+<li>on<p>Enable automatic spelling correction and text substitutions.</p>
+
+<li>off
+<p>Disable automatic spelling correction and text substitutions.</p>
+</ul>
+<h3>autofocus</h3>
+<p>This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form-associated element in a document can have this attribute specified.</p>
+
+<h3>cols</h3>
+<p>The visible width of the text control, in average character widths. If it is specified, it must be a positive integer. If it is not specified, the default value is 20.</p>
+
+<h3>disabled</h3>
+<p>This Boolean attribute indicates that the user cannot interact with the control. If this attribute is not specified, the control inherits its setting from the containing element, for example &lt;fieldset&gt;; if there is no containing element when the disabled attribute is set, the control is enabled.</p>
+
+<h3>form</h3>
+<p>The form element that the &lt;textarea&gt; element is associated with (its "form owner"). The value of the attribute must be the id of a form element in the same document. If this attribute is not specified, the &lt;textarea&gt; element must be a descendant of a form element. This attribute enables you to place &lt;textarea&gt; elements anywhere within a document, not just as descendants of form elements.</p>
+
+<h3>maxlength</h3>
+<p>The maximum number of characters (UTF-16 code units) that the user can enter. If this value isn't specified, the user can enter an unlimited number of characters.</p>
+
+<h3>minlength</h3>
+<p>The minimum number of characters (UTF-16 code units) required that the user should enter.</p>
+
+<h3>name</h3>
+<p>The name of the control.</p>
+
+<h3>placeholder</h3>
+<p>A hint to the user of what can be entered in the control. Carriage returns or line-feeds within the placeholder text must be treated as line breaks when rendering the hint.</p>
+<div class="note">
+<p>Note: Placeholders should only be used to show an example of the type of data that should be entered into a form; they are not a substitute for a proper &lt;label&gt; element tied to the input. See &lt;inpur&gt; labels for a full explanation.</p>
+</div>
+<h3>readonly</h3>
+<p>This Boolean attribute indicates that the user cannot modify the value of the control. Unlike the disabled attribute, the readonly attribute does not prevent the user from clicking or selecting in the control. The value of a read-only control is still submitted with the form.</p>
+
+<h3>required</h3>
+<p>This attribute specifies that the user must fill in a value before submitting a form.</p>
+
+<h3>rows</h3>
+<p>The number of visible text lines for the control. If it is specified, it must be a positive integer. If it is not specified, the default value is 2.</p>
+
+<h3>spellcheck</h3>
+<p>Specifies whether the &lt;textarea&gt; is subject to spell checking by the underlying browser/OS. The value can be:</p>
+<ul>
+<li>true: Indicates that the element needs to have its spelling and grammar checked.
+<li>default : Indicates that the element is to act according to a default behavior, possibly based on the parent element's own spellcheck value.
+<li>false : Indicates that the element should not be spell checked.
+</ul>
+<h3>wrap</h3>
+<p>Indicates how the control should wrap the value for form submission. Possible values are:</p>
+<ul>
+<li>hard: The browser automatically inserts line breaks (CR+LF) so that each line is no longer than the width of the control; the cols attribute must be specified for this to take effect
+<li>soft: The browser ensures that all line breaks in the entered value are a CR+LF pair, but no additional line breaks are added to the value.
+<li>off Non-standard: Like soft but changes appearance to white-space: pre so line segments exceeding cols are not wrapped and the &lt;textarea&gt; becomes horizontally scrollable.
+</ul>
+If this attribute is not specified, soft is its default value.
+</body>
+</html>

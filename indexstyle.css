@@ -7,18 +7,23 @@
 h1 {
     line-height: 9vh;
     text-align: center;
+    font-size: 2.5em;
 }
 
 a:link {
     text-decoration: none;
     color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
 }
 
 a:hover {
     text-decoration: underline wavy;
+    font-size: 1.2em;
 }
 
 a:visited {
+    font-size: 1.2em;
     color: #fff;
 }
 
@@ -37,10 +42,6 @@ tr:nth-of-type(2n) {
     background-color: #000;
     color: #fff;
 }
-/*
-td>a:link {
-    color: #fff;
-} */
 
 footer {
     color: white;
@@ -56,6 +57,7 @@ footer {
 
 footer p {
     margin: 0px 1vw;
+    font-size: 1.2em;
 }
 
 #fbox {
